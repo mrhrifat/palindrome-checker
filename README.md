@@ -6,7 +6,7 @@ It's a palindrome number and date checker. It design with HTML, SASS, Bootstrap.
 
 ## Demo
 - Live
-    - [Palindrome Checker]()
+    - [Palindrome Checker](https://mrhrifat.github.io/palindrome-checker-2)
 
 ## How To Contribute
 - Fork the repository.
@@ -18,4 +18,4 @@ It's a palindrome number and date checker. It design with HTML, SASS, Bootstrap.
 **Note:** If you want to do a major changes than first create an Issue.
 
 ## License
-This project is licensed under [GPL-3.0]().
+This project is licensed under [GPL-3.0](https://github.com/mrhrifat/palindrome-checker-2/blob/master/LICENSE.md).
