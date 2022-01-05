@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<title>Palindrome || Mrh Rifat</title>
+</head>
+
+<body>
+	<section class="master">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 main">
+					<div class="content">
+						<div class="bg">
+							<h3>Palindrome Checker</h3>
+
+							<form class="form">
+
+								<div class="form-group text">
+									<label>Enter your value</label>
+									<small>(Number, Name)</small>
+
+									<input type="text" id="getValue" class="form-control" placeholder="Ex: 121 / Era ">
+								</div>
+								<div>
+									<button class="btn btn-primary" onclick="palindromeNumber()">Check
+										Value</button>
+								</div>
+
+
+								<div class="form-group date">
+									<label>Enter your date</label>
+									<small>(Choose date)</small>
+									<input type="date" id="getDate" class="form-control">
+								</div>
+								<div>
+									<button class="btn btn-success " onclick="palindromeDate()">Check Date</button>
+								</div>
+
+								<div class="footer-section">
+									<p>
+										Don't know what is Palindrome ?
+									</p>
+									<a href="https://en.wikipedia.org/wiki/Palindrome" target="_blank">Click Here</a>
+								</div>
+
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+
+		//Date Function
+
+		function palindromeDate() {
+			var inputDate = document.getElementById("getDate").value;
+
+			var makeString = inputDate.toString();
+
+			var dateNoHyphens = makeString.replace("-", "");
+
+			var dateNoHyphens2 = dateNoHyphens.replace("-", "");
+
+			var reverse = dateNoHyphens2.split("").reverse().join("");
+
+
+			if (inputDate.trim() == '') {
+				return alert("Please select a date !");
+			} else {
+				if (reverse === dateNoHyphens2) {
+					return alert(inputDate + " (Year/Month/Day)  is a Palindrom Value");
+				} else {
+					return alert(inputDate + " (Year/Month/Day) is not a Palindrom Value");
+				}
+			}
+		}
+
+
+		//Number Function
+		function palindromeNumber() {
+
+			var inputValue = document.getElementById("getValue").value;
+
+			var reverse = inputValue.split("").reverse().join("");
+			if (inputValue.trim() == '') {
+				return alert("Please input a number");
+			} else {
+				if (reverse === inputValue) {
+					return alert(inputValue + " is a Palindrom Value");
+				} else {
+					return alert(inputValue + " is not a Palindrom Value");
+				}
+			}
+		}
+
+	</script>
+	<script type="text/javascript" src="js/jquery-slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
