@@ -4,7 +4,7 @@ h3, a, label, small {
 
 .master {
   background: url("../img/bg.jpg") no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: 100%;
   max-width: 100%;
@@ -35,7 +35,7 @@ h3, a, label, small {
           box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.1);
-  padding: 20px 10px;
+  padding: 22px 10px;
   overflow: hidden;
 }
 
@@ -50,7 +50,7 @@ h3, a, label, small {
 }
 
 .master .main .content .bg .form .footer-section a {
-  color: #e74c3c;
+  color: light coral;
   float: left;
   padding: 0 5px;
 }
